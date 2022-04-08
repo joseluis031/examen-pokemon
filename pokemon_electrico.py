@@ -1,10 +1,10 @@
 import random
 
-from pokemon import pokemon
+from pokemon import Pokemon
 from weapon_type import WeaponType
 
 
-class PokemonElectricity(pokemon):
+class PokemonElectricity(Pokemon):
     
 
 

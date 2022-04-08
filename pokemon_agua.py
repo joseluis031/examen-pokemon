@@ -1,8 +1,8 @@
-from pokemon import pokemon
+from pokemon import Pokemon
 from weapon_type import WeaponType
 
 
-class PokemonWater(pokemon):
+class PokemonWater(Pokemon):
     
 
 

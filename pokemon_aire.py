@@ -1,11 +1,11 @@
 
 import random
 
-from pokemon import pokemon
+from pokemon import Pokemon
 from weapon_type import WeaponType
 
 
-class PokemonAir(pokemon):
+class PokemonAir(Pokemon):
     
 
 

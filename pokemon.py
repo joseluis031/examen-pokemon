@@ -1,12 +1,12 @@
 from weapon_type import WeaponType
 
-class pokemon():
+class Pokemon():
     lista_ids= []
     def __init__(self,id,nombre,arma,salud,ataque,defensa):
        if isinstance(id, int):
-            if id not in pokemon.lista_ids:
+            if id not in Pokemon.lista_ids:
                 self.id = id
-                pokemon.lista_ids.append(self.id)
+                Pokemon.lista_ids.append(self.id)
             else:
                 raise ValueError("The parameter pokemon_id should be a new id not taken by other Pokemon.")
        else:
@@ -51,7 +51,7 @@ class pokemon():
         
 
         
-        pokemon.lista_ids.remove(self.id)
+        Pokemon.lista_ids.remove(self.id)
 
 
     def __str__(self):
@@ -181,7 +181,7 @@ def main():
     print("=================================================================.")
     print("Test Case 1: Create a Pokemon.")
     print("=================================================================.")
-    pokemon_1 = pokemon(1, "Ivysaur", WeaponType.HEADBUTT, 100, 8, 9)
+    pokemon_1 = Pokemon(1, "Ivysaur", WeaponType.HEADBUTT, 100, 8, 9)
 
     if pokemon_1.get_nombre() == "Ivysaur":
         print("Test PASS. The parameter pokemon_name has been correctly set.")
@@ -212,7 +212,7 @@ def main():
     print("=================================================================.")
     print("Test Case 2: Human-readable format of the object.")
     print("=================================================================.")
-    pokemon_2 = pokemon(2, "Charmander", WeaponType.HEADBUTT, 100, 7, 10)
+    pokemon_2 = Pokemon(2, "Charmander", WeaponType.HEADBUTT, 100, 7, 10)
 
     if str(pokemon_2) == "Pokemon ID 2 with name Charmander has as weapon HEADBUTT and health 100":
         print("Test PASS. The human-readable format of the object has been implemented correctly.")
@@ -223,7 +223,7 @@ def main():
     print("=================================================================.")
     print("Test Case 3: Pokemon alive?¿?.")
     print("=================================================================.")
-    pokemon_3 = pokemon(3, "Wartortle", WeaponType.KICK, 97, 8, 9)
+    pokemon_3 = Pokemon(3, "Wartortle", WeaponType.KICK, 97, 8, 9)
 
     if pokemon_3.is_alive():
         pokemon_3.fight_defense(200)  # With this the Pokemon should be retired.
@@ -239,7 +239,7 @@ def main():
     print("=================================================================.")
     print("Test Case 4: Check the defense during a Fight.")
     print("=================================================================.")
-    pokemon_4 = pokemon(4, "Squirtle", WeaponType.ELBOW, 93, 9, 6)
+    pokemon_4 = Pokemon(4, "Squirtle", WeaponType.ELBOW, 93, 9, 6)
 
     pokemon_4.fight_defense(70)
 
@@ -252,8 +252,8 @@ def main():
     print("=================================================================.")
     print("Test Case 5: Check the attack during a Fight.")
     print("=================================================================.")
-    pokemon_5 = pokemon(5, "Venusaur", WeaponType.PUNCH, 99, 10, 7)
-    pokemon_6 = pokemon(6, "Charmeleon", WeaponType.PUNCH, 99, 9, 8)
+    pokemon_5 = Pokemon(5, "Venusaur", WeaponType.PUNCH, 99, 10, 7)
+    pokemon_6 = Pokemon(6, "Charmeleon", WeaponType.PUNCH, 99, 9, 8)
 
     pokemon_was_hit = pokemon_5.fight_attack(pokemon_6)
 
