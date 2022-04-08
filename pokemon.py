@@ -1,4 +1,6 @@
-class pokemon:
+from arma import WeaponType
+
+class pokemon():
     lista_ids= []
     def __init__(self,id,nombre,arma,salud,ataque,defensa):
        if isinstance(id, int):
