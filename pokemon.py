@@ -1,4 +1,4 @@
-from arma import WeaponType
+from weapon_type import WeaponType
 
 class pokemon():
     lista_ids= []
