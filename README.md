@@ -16,7 +16,7 @@ El link del repositorio es el siguiente:[GitHub](https://github.com/joseluis031/
 7.[Weapon type](#id7)
 
 
-## Main
+## Main <a name="id1"></a>
 ```
 import csv
 import copy
@@ -180,7 +180,7 @@ if __name__ == "__main__":
 
 ```
 
-## Pokemon
+## Pokemon <a name="id2"></a>
 ```
 from weapon_type import WeaponType
 
@@ -458,7 +458,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Pokemon agua
+## Pokemon agua <a name="id3"></a>
 ```
 from pokemon import Pokemon
 from weapon_type import WeaponType
@@ -594,7 +594,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Pokemon aire
+## Pokemon aire <a name="id4"></a>
 ```
 
 import random
@@ -756,7 +756,7 @@ if __name__ == "__main__":
 
 ```
 
-## Pokemon electrico
+## Pokemon electrico <a name="id5"></a>
 ```
 import random
 
@@ -906,7 +906,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Pokemon tierra
+## Pokemon tierra <a name="id6"></a>
 ```
 from pokemon import Pokemon
 from weapon_type import WeaponType
@@ -1041,7 +1041,7 @@ if __name__ == "__main__":
     main()
 ```
 
-## Weapon type
+## Weapon type <a name="id7"></a>
 ```
 from enum import Enum
 
